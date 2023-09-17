@@ -10,17 +10,17 @@ const MarginWrapper = ({ children }) => {
 				border: "1px solid red",
 				margin: "0 1rem",
 				[theme.breakpoints.sm.higher]: {
-					margin: "0 3rem",
+					margin: "0 10%",
 				},
-				[theme.breakpoints.md.higher]: {
-					margin: "0 6rem",
-				},
-				[theme.breakpoints.lg.higher]: {
-					margin: "0 10rem",
-				},
-				[theme.breakpoints.xl.higher]: {
-					margin: "0 15rem",
-				},
+				// [theme.breakpoints.md.higher]: {
+				// 	margin: "0 6rem",
+				// },
+				// [theme.breakpoints.lg.higher]: {
+				// 	margin: "0 10rem",
+				// },
+				// [theme.breakpoints.xl.higher]: {
+				// 	margin: "0 15rem",
+				// },
 			}}
 		>
 			{children}

@@ -1,9 +1,10 @@
-const breakpoints = [600, 800, 1000, 1200, 1400];
+const breakpoints = [500, 700, 1000, 1200, 1400];
 
-const mq = breakpoints.map((bp) => {
+const mq = breakpoints.map((bp, idx) => {
 	return {
 		higher: `@media (min-width: ${bp}px)`,
 		lower: `@media (max-width: ${bp}px)`,
+		only: `@media (min-width: ${bp}px) and (max-width: ${breakpoints[idx + 1]}px)`,
 	};
 });
 
@@ -75,15 +76,15 @@ const theme = {
 
 theme.globals = {
 	html: {
-		fontSize: theme.root.baseFontSize
+		fontSize: theme.root.baseFontSize,
 	},
-    body: {
-		backgroundColor: theme.colors.grey[500]
-    },
-	'*': {
-		transition: 'background 0.5 ease'
+	body: {
+		backgroundColor: theme.colors.grey[500],
+	},
+	"*": {
+		transition: "background 0.5 ease",
 	},
 	...theme.typography,
-}
+};
 
 export default theme;
