@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
 				}}
 			>
 				<img
-					src="https://picsum.photos/500/300"
+					src={project.imageUrl.toString()}
 					css={{
 						width: "100%",
 						height: "auto",

@@ -21,7 +21,7 @@ const CardContainer = ({ children }) => {
 				css={{
 					// border: '1px solid blue',
 					display: "grid",
-					gridTemplateRows: "3fr 4fr",
+					gridTemplateRows: "4fr 5fr",
 					borderRadius: "20px",
 					position: "absolute",
 					height: "100%",

@@ -34,7 +34,7 @@ const lightTheme = merge({}, defaultTheme, {
 				rhomboid: {
 					color: defaultTheme.colors.grey[700],
 					borderColor: defaultTheme.colors.grey[700],
-					'&:hover': {
+					hover: {
 						backgroundColor: defaultTheme.colors.grey[600]
 					}
 				},

@@ -8,25 +8,25 @@ const projects = [
 		title: "Zenora",
 		description:
 			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
-		imageUrl: "./public/zenora-preview.png",
+		imageUrl: "./public/zenora-preview-2.png",
 	},
 	{
 		title: "Repertoire",
 		description:
 			"A MERN Stack app usrs can use to track workouts, with helpful exercise gifs.",
-		imageUrl: "./public/zenora-preview.png",
+		imageUrl: "./public/repertoire-preview.png",
 	},
 	{
 		title: "Zenora",
 		description:
 			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
-		imageUrl: "./public/zenora-preview.png",
+		imageUrl: "./public/zenora-preview-2.png",
 	},
 	{
 		title: "Repertoire",
 		description:
 			"A MERN Stack app usrs can use to track workouts, with helpful exercise gifs.",
-		imageUrl: "./public/zenora-preview.png",
+		imageUrl: "./public/repertoire-preview.png",
 	},
 ];
 
@@ -51,8 +51,8 @@ const Portfolio = () => {
 				<h2>Portfolio</h2>
 
 				<ProjectListContainer>
-					{projects.map((p) => (
-						<ProjectCard project={p} />
+					{projects.map((p, idx) => (
+						<ProjectCard project={p} key={idx} />
 					))}
 				</ProjectListContainer>
 			</div>
