@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "@emotion/react";
-import { Directions } from "@mui/icons-material";
 import Button from "../components/Button";
+
 
 const Home = () => {
 	const theme = useTheme();
@@ -31,9 +31,11 @@ const Home = () => {
 					passion for innovation, and a meticulous attention to
 					detail.
 				</blockquote>
-				<Button variant="rhomboid" css={{ marginTop: "1rem" }}>
-					View my resume
-				</Button>
+                <a href="/resume.pdf">
+                    <Button variant="rhomboid" css={{ marginTop: "1rem" }}>
+                        View my resume
+                    </Button>
+                </a>
 			</div>
 		</section>
 	);
