@@ -3,72 +3,96 @@ import { Link } from "react-router-dom";
 import CardContainer from "./CardContainer";
 import ProjectTags from "./ProjectTags";
 import { useTheme } from "@emotion/react";
+import { GitHub } from "@mui/icons-material";
+import IconButton from "./IconButton";
 
 const ProjectCard = ({ project }) => {
 	const theme = useTheme();
 
 	return (
-		<CardContainer>
-			<div
-				css={{
-					// display: "flex",
-					overflow: "hidden",
-					borderTopLeftRadius: "20px",
-					borderTopRightRadius: "20px",
-				}}
-			>
-				<img
-					src={project.imageUrl.toString()}
-					css={{
-						width: "100%",
-						height: "auto",
-					}}
-				></img>
-			</div>
-			{/*  body */}
-			<CardLower>
+		<a href={project.appLink}>
+			<CardContainer>
 				<div
 					css={{
-						textAlign: "left",
-					}}
-				>
-					<h2
-						css={{
-							[theme.breakpoints.md.only]: {
-								fontSize: "1.3rem",
-							},
-						}}
-					>
-						{project.title}
-					</h2>
-				</div>
-
-				<div
-					css={{
-						margin: "-1rem 0",
-						textAlign: "left",
+						// display: "flex",
 						overflow: "hidden",
+						borderTopLeftRadius: "20px",
+						borderTopRightRadius: "20px",
 					}}
 				>
-					<p
+					<img
+						src={project.imageUrl.toString()}
 						css={{
-							[theme.breakpoints.md.only]: {
-								fontSize: ".8rem",
-							},
+							width: "100%",
+							height: "auto",
+						}}
+					></img>
+				</div>
+				{/*  body */}
+				<CardLower>
+					<div
+						css={{
+							textAlign: "left",
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "space-between",
+							width: "100%",
 						}}
 					>
-						{project.description}
-					</p>
-				</div>
-				<div>
-					<ProjectTags />
-				</div>
-				{/* <div>
+						<h2
+							css={{
+								[theme.breakpoints.md.only]: {
+									fontSize: "1.3rem",
+								},
+								"@media (max-width: 400px)": {
+									fontSize: "1.3rem",
+								},
+							}}
+						>
+							{project.title}
+						</h2>
+
+						<a href={project.githubLink} css={{
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center'
+						}}>
+							<GitHub />
+						</a>
+					</div>
+
+					<div
+						css={{
+							margin: "-1rem 0",
+							textAlign: "left",
+							overflow: "hidden",
+						}}
+					>
+						<p
+							css={{
+								[theme.breakpoints.md.only]: {
+									fontSize: ".8rem",
+								},
+								"@media (max-width: 400px)": {
+									fontSize: ".8rem",
+								},
+								"@media (max-width: 320px)": {
+									fontSize: ".6rem",
+								},
+							}}
+						>
+							{project.description}
+						</p>
+					</div>
+					<div>
+						<ProjectTags />
+					</div>
+					{/* <div>
 						<Button variant="ghost">Learn More</Button>
 					</div> */}
-			</CardLower>
+				</CardLower>
 
-			{/* <p style={{ color: `${purple[400]}` }} color={purple.purple400}>
+				{/* <p style={{ color: `${purple[400]}` }} color={purple.purple400}>
 					by {project.User.name}
 				</p>
 				{user.id === course.userId && (
@@ -81,8 +105,8 @@ const ProjectCard = ({ project }) => {
 						</button>
 					</div>
 				)} */}
-		</CardContainer>
-		// </Link>
+			</CardContainer>
+		</a>
 	);
 };
 

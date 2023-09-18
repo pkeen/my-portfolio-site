@@ -20,7 +20,6 @@ const NavBar = () => {
 		<header>
 			<nav
 				css={{
-					border: "1px solid red",
 					display: "flex",
 					justifyContent: "space-between",
 					alignItems: "center",
@@ -45,7 +44,6 @@ const NavBar = () => {
 				<div
 					css={css`
 						display: flex;
-						border: 1px solid red;
 						align-items: center;
 						justify-content: space-between;
 						div,

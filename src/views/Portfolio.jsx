@@ -5,28 +5,40 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
 	{
+		id: 1,
 		title: "Zenora",
 		description:
 			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
 		imageUrl: "./public/zenora-preview-2.png",
+		appLink: "https://zenora.vercel.app/",
+		githubLink: "https://github.com/pkeen/zenora-frontend",
 	},
 	{
+		id: 2,
 		title: "Repertoire",
 		description:
-			"A MERN Stack app usrs can use to track workouts, with helpful exercise gifs.",
+			"A MERN Stack app users can use to track workouts, with helpful exercise gifs.",
 		imageUrl: "./public/repertoire-preview.png",
+		appLink: "https://repertoire-23c95f862c5c.herokuapp.com/",
+		githubLink: "https://github.com/pkeen/repertoire",
 	},
 	{
-		title: "Zenora",
+		id: 3,
+		title: "Bubble Words",
 		description:
-			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
-		imageUrl: "./public/zenora-preview-2.png",
+			"A typing game built in vanilla javascript, users must type words to pop bubbles and earn points",
+		imageUrl: "./bubble-words.png",
+		appLink: "https://pkeen.github.io/BubbleWords/",
+		githubLink: "https://github.com/pkeen/BubbleWords",
 	},
 	{
-		title: "Repertoire",
+		id: 4,
+		title: "Casharoo",
 		description:
-			"A MERN Stack app usrs can use to track workouts, with helpful exercise gifs.",
-		imageUrl: "./public/repertoire-preview.png",
+			"A Django app that allows users to track expenses and see a breakdown by categry",
+		imageUrl: "casharoo-preview.png",
+		appLink: "https://casharoo-f9e69a0a5271.herokuapp.com/",
+		githubLink: "https://github.com/pkeen/casharoo",
 	},
 ];
 
@@ -36,25 +48,64 @@ const Portfolio = () => {
 
 	return (
 		<section
-			id="home"
+			id="portfolio"
 			css={{
-				border: "1px solid blue",
-				minHeight: windowHeight - 80,
+				minHeight: windowHeight,
+				height: windowHeight,
 				display: "flex",
 				flexDirection: "column",
-				justifyContent: "center",
+				// justifyContent: "center",
 				alignItems: "center",
 				textAlign: "left",
 			}}
 		>
-			<div css={{ border: "1px solid red", width: "100%" }}>
-				<h2>Portfolio</h2>
-
-				<ProjectListContainer>
-					{projects.map((p, idx) => (
-						<ProjectCard project={p} key={idx} />
-					))}
-				</ProjectListContainer>
+			<div
+				css={{
+					width: "100%",
+					height: "10px",
+					flexShrink: 0, // This will prevent the div from growing or shrinking
+					background:
+						"linear-gradient(270deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
+				}}
+			></div>
+			<div
+				css={{
+					display: "flex",
+					flexDirection: "row",
+					width: "100%",
+					flex: "1",
+					// height: "100%"
+				}}
+			>
+				<div // THIS
+					css={{
+						width: "10px",
+						height: "100%",
+						background:
+							"linear-gradient(0deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
+					}}
+				></div>
+				<div
+					css={{
+						flexGrow: "1",
+						display: "flex",
+						flexDirection: "column",
+					}}
+				>
+					<div
+						css={{
+							margin: "2%",
+						}}
+					>
+						<h2>Portfolio</h2>
+						<p>Check out some of my past work</p>
+					</div>
+					<ProjectListContainer>
+						{projects.map((p) => (
+							<ProjectCard project={p} key={p.id} />
+						))}
+					</ProjectListContainer>
+				</div>
 			</div>
 		</section>
 	);
