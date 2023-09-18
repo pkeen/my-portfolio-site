@@ -9,7 +9,9 @@ const ProjectListContainer = ({ children, className }) => {
 				display: "grid",
 				// gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
                 gridTemplateColumns: "1fr",
-				gap: "2vw",
+				gap: "1vw 2vw",
+				// gap: '2% 5%',
+				flex: '1',
 
 				[theme.breakpoints.md.higher]: {
 					gridTemplateColumns:

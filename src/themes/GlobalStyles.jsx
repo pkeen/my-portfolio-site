@@ -236,6 +236,8 @@ const GlobalStyles = ({ theme }) => {
 				*::before,
 				*::after {
 					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
 				}
 				body {
 					background-color: ${theme.backgroundColor};

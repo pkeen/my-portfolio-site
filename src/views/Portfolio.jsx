@@ -52,7 +52,7 @@ const Portfolio = () => {
 			id="portfolio"
 			css={{
 				minHeight: windowHeight,
-				height: windowHeight,
+				// height: windowHeight,
 				display: "flex",
 				flexDirection: "column",
 				// justifyContent: "center",
@@ -82,7 +82,7 @@ const Portfolio = () => {
 				<div // THIS
 					css={{
 						width: "10px",
-						height: "100%",
+						// height: "100%",
 						background: `linear-gradient(0deg, ${theme.gradients.border[0]} 0%, ${theme.gradients.border[1]})`,
 					}}
 				></div>

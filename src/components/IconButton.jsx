@@ -17,7 +17,7 @@ const IconButton = ({
 	let css = {
         display: 'flex',
 		padding: "0rem",
-		borderRadius: "3rem",
+		borderRadius: "1rem",
 		border: "none",
 		outline: "none",
 		WebkitAppearance: "none",
@@ -29,15 +29,18 @@ const IconButton = ({
 		fontWeight: "700",
 		"&:hover": {
 			backgroundColor: theme.colors.grey[600],
+			cursor: 'pointer'
 		},
 		"&:active": {
 			backgroundColor: theme.colors.grey[700],
 		},
 	};
 
+	let extraCss;
+
 	switch (variant) {
 		case "ghost":
-			const extraCss = {
+			extraCss = {
 				backgroundColor: "transparent",
 				border: `1px solid ${theme.colors.grey[500]}`,
 				color: theme.colors.grey[500],
@@ -48,7 +51,18 @@ const IconButton = ({
 			};
 			css = { ...css, ...extraCss };
 			break;
+		case "gradient":
+			extraCss = {
+				"svg": {
+					background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
+					// background: `linear-gradient(90deg, ${theme.colors.bittersweet[700]}, ${theme.colors.frangipani[400]})`, // alternative more bright
+					WebkitBackgroundClip: "svg",
+					WebkitTextFillColor: "transparent",
+					borderRadius: "3px",
+				}
+			}
 	}
+	
 
 	switch (size) {
 		case "sm": {
