@@ -4,7 +4,6 @@ import CardContainer from "./CardContainer";
 import ProjectTags from "./ProjectTags";
 import { useTheme } from "@emotion/react";
 import { GitHub } from "@mui/icons-material";
-import IconButton from "./IconButton";
 
 const ProjectCard = ({ project }) => {
 	const theme = useTheme();
@@ -39,7 +38,7 @@ const ProjectCard = ({ project }) => {
 							width: "100%",
 						}}
 					>
-						<h2
+						<h3
 							css={{
 								[theme.breakpoints.md.only]: {
 									fontSize: "1.3rem",
@@ -47,16 +46,23 @@ const ProjectCard = ({ project }) => {
 								"@media (max-width: 400px)": {
 									fontSize: "1.3rem",
 								},
+								background: `linear-gradient(90deg, ${theme.gradients.h3[0]}, ${theme.gradients.h3[1]})`,
+								// background: `linear-gradient(90deg, ${theme.colors.bittersweet[700]}, ${theme.colors.frangipani[400]})`, // alternative more bright
+								WebkitBackgroundClip: "text",
+								WebkitTextFillColor: "transparent",
 							}}
 						>
 							{project.title}
-						</h2>
+						</h3>
 
-						<a href={project.githubLink} css={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center'
-						}}>
+						<a
+							href={project.githubLink}
+							css={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
+						>
 							<GitHub />
 						</a>
 					</div>

@@ -25,7 +25,6 @@ const lightTheme = merge({}, defaultTheme, {
 		blockquote: {
 			color: defaultTheme.colors.grey[600],
 		},
-		
 	},
 	components: {
 		button: {
@@ -35,11 +34,24 @@ const lightTheme = merge({}, defaultTheme, {
 					color: defaultTheme.colors.grey[700],
 					borderColor: defaultTheme.colors.grey[700],
 					hover: {
-						backgroundColor: defaultTheme.colors.grey[600]
-					}
+						backgroundColor: defaultTheme.colors.grey[200],
+					},
 				},
 			},
 		},
+	},
+	gradients: {
+		h1: [defaultTheme.colors.grey[900], defaultTheme.colors.pink[700]],
+		h2: [
+			defaultTheme.colors.appleBlossom[400],
+			defaultTheme.colors.orientalPink[200],
+		],
+		h3: [
+			defaultTheme.colors.orientalPink[400],
+			defaultTheme.colors.appleBlossom[600],
+		],
+
+		// darkVibrant: `linear-gradient(90deg, ${theme.colors.appleBlossom[500]}, ${theme.colors.orientalPink[300]})`,
 	},
 	globals: {
 		body: {

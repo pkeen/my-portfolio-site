@@ -46,6 +46,12 @@ let darkTheme = merge({}, defaultTheme, {
 			},
 		},
 	},
+	gradients: {
+		h1: [defaultTheme.colors.grey[50], defaultTheme.colors.pink[200]], 
+		h2: [defaultTheme.colors.appleBlossom[500], defaultTheme.colors.orientalPink[300]],
+		h3: [defaultTheme.colors.orientalPink[600], defaultTheme.colors.appleBlossom[500]],
+		// darkVibrant: `linear-gradient(90deg, ${theme.colors.appleBlossom[500]}, ${theme.colors.orientalPink[300]})`,
+	},
 	globals: {
 		body: {
 			backgroundColor: defaultTheme.colors.grey[900],

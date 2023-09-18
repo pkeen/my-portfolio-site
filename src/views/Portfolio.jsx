@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "@emotion/react";
 import ProjectListContainer from "../components/ProjectListContainer";
 import ProjectCard from "../components/ProjectCard";
+import { css } from "@emotion/react";
 
 const projects = [
 	{
@@ -64,8 +65,9 @@ const Portfolio = () => {
 					width: "100%",
 					height: "10px",
 					flexShrink: 0, // This will prevent the div from growing or shrinking
-					background:
-						"linear-gradient(270deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
+					background: theme.colors.bittersweet[400],
+
+					background: `linear-gradient(270deg, ${theme.colors.bittersweet[400]} 0%, ${theme.colors.pink[200]})`,
 				}}
 			></div>
 			<div
@@ -81,8 +83,7 @@ const Portfolio = () => {
 					css={{
 						width: "10px",
 						height: "100%",
-						background:
-							"linear-gradient(0deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
+						background: `linear-gradient(0deg, ${theme.colors.bittersweet[400]} 0%, ${theme.colors.pink[200]})`,
 					}}
 				></div>
 				<div
@@ -97,7 +98,16 @@ const Portfolio = () => {
 							margin: "2%",
 						}}
 					>
-						<h2>Portfolio</h2>
+						<h2
+							css={{
+								background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
+								// background: `linear-gradient(90deg, ${theme.colors.bittersweet[700]}, ${theme.colors.frangipani[400]})`, // alternative more bright
+								WebkitBackgroundClip: "text",
+								WebkitTextFillColor: "transparent",
+							}}
+						>
+							Portfolio
+						</h2>
 						<p>Check out some of my past work</p>
 					</div>
 					<ProjectListContainer>
