@@ -10,7 +10,7 @@ const projects = [
 		title: "Zenora",
 		description:
 			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
-		imageUrl: "./public/zenora-preview-2.png",
+		imageUrl: "./zenora-preview-2.png",
 		appLink: "https://zenora.vercel.app/",
 		githubLink: "https://github.com/pkeen/zenora-frontend",
 	},
@@ -19,7 +19,7 @@ const projects = [
 		title: "Repertoire",
 		description:
 			"A MERN Stack app users can use to track workouts, with helpful exercise gifs.",
-		imageUrl: "./public/repertoire-preview.png",
+		imageUrl: "./repertoire-preview.png",
 		appLink: "https://repertoire-23c95f862c5c.herokuapp.com/",
 		githubLink: "https://github.com/pkeen/repertoire",
 	},

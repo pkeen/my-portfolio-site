@@ -19,9 +19,8 @@ const RhomboidGradientButton = ({
 		WebkitAppearance: "none",
 		MozAppearance: "none",
 		appearance: "none",
-		transition: "background-color .3s ease",
-        transition: "margin 0.4s ease",
-		color: theme.components.button.color,
+		transition: "background-color .3s ease, margin 0.4s ease",
+		// color: theme.components.button.color,
 		fontWeight: "700",
 		"&:hover": {
 			// backgroundColor: theme.colors.grey[600],
