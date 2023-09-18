@@ -7,9 +7,9 @@ const NavigationMenu = ({ className }) => {
 
 	return (
 		<div className={className}>
-			<StyledLink to="/about">About</StyledLink>
-			<StyledLink to="/portfolio">Portfolio</StyledLink>
-			<StyledLink to="/contact">Contact</StyledLink>
+			<StyledLink to="#about">About</StyledLink>
+			<StyledLink to="#portfolio">Portfolio</StyledLink>
+			<StyledLink to="#contact">Contact</StyledLink>
 		</div>
 	);
 };

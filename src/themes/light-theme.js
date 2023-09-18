@@ -25,6 +25,12 @@ const lightTheme = merge({}, defaultTheme, {
 		blockquote: {
 			color: defaultTheme.colors.grey[600],
 		},
+		a: {
+			color: defaultTheme.colors.grey[700],
+			"&: hover": {
+				color: defaultTheme.colors.grey[600],
+			},
+		},
 	},
 	components: {
 		button: {

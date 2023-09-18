@@ -7,8 +7,8 @@ const Logo = () => {
 	const theme = useTheme();
 
 	return (
-		<div css={{color: theme.colors.grey[300]}}>
-			PK
+		<div css={{color: theme.typography.h1.color}}>
+			SK
 		</div>
 	);
 };

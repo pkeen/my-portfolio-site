@@ -4,28 +4,24 @@ import { useTheme } from "@emotion/react";
 import ThemeContext from "../../themes/ThemeContext";
 
 const StyledLink = ({ children, to }) => {
-	const { theme } = useContext(ThemeContext);
-	const themeObject = useTheme();
-	console.log(themeObject);
+	// const { theme } = useContext(ThemeContext);
+	const theme = useTheme();
 	return (
-		<Link
-			to={to}
+		<a
+			href={to}
 			css={{
-				color:
-					theme === "light"
-						? themeObject.colors.grey[700]
-						: themeObject.colors.grey[400],
+				color: theme.typography.a.color,
 				"&:hover": {
-					color:
-						theme === "light"
-							? themeObject.colors.grey[500]
-							: themeObject.colors.grey[600],
+					background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
+					// background: `linear-gradient(90deg, ${theme.colors.bittersweet[700]}, ${theme.colors.frangipani[400]})`, // alternative more bright
+					WebkitBackgroundClip: "text",
+					WebkitTextFillColor: "transparent",
 					// textShadow: '0px -1px 2px',
 				},
 			}}
 		>
 			{children}
-		</Link>
+		</a>
 	);
 };
 
