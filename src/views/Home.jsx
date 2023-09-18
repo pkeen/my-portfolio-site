@@ -23,7 +23,7 @@ const Home = () => {
 					height: "10px",
 					// background:
 					// "linear-gradient(90deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
-					background: `linear-gradient(90deg, ${theme.colors.appleBlossom[400]} 0%, ${theme.colors.orientalPink[300]})`,
+					background: `linear-gradient(90deg, ${theme.gradients.border[0]} 0%, ${theme.gradients.border[1]})`,
 				}}
 			></div>
 			<div
@@ -83,9 +83,13 @@ const Home = () => {
 							>
 								View my resume
 							</Button> */}
-							<RhomboidGradientButton css={{
-								marginTop: '1rem'
-							}}>Download Resume</RhomboidGradientButton>
+							<RhomboidGradientButton
+								css={{
+									marginTop: "1rem",
+								}}
+							>
+								Download Resume
+							</RhomboidGradientButton>
 						</a>
 					</div>
 				</div>
@@ -97,7 +101,7 @@ const Home = () => {
 						background: "rgb(247,109,96)",
 						// background:
 						// 	"linear-gradient(0deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
-						background: `linear-gradient(0deg, ${theme.colors.bittersweet[400]} 0%, ${theme.colors.pink[200]})`,
+						background: `linear-gradient(0deg, ${theme.gradients.border[0]} 0%, ${theme.gradients.border[1]})`,
 					}}
 				></div>
 			</div>

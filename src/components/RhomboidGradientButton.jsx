@@ -20,7 +20,7 @@ const RhomboidGradientButton = ({
 		MozAppearance: "none",
 		appearance: "none",
 		transition: "background-color .3s ease",
-        transition: "margin 0.5s ease",
+        transition: "margin 0.4s ease",
 		color: theme.components.button.color,
 		fontWeight: "700",
 		"&:hover": {

@@ -50,7 +50,10 @@ const lightTheme = merge({}, defaultTheme, {
 			defaultTheme.colors.orientalPink[400],
 			defaultTheme.colors.appleBlossom[600],
 		],
-
+		border: [
+			defaultTheme.colors.appleBlossom[500],
+			defaultTheme.colors.orientalPink[400],
+		],
 		// darkVibrant: `linear-gradient(90deg, ${theme.colors.appleBlossom[500]}, ${theme.colors.orientalPink[300]})`,
 	},
 	globals: {
