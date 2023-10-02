@@ -51,7 +51,7 @@ const Hamburger = () => {
 				css={hamburgerCss}
 				onClick={handleClick}
 				role="button"
-				ariaLable="menu"
+				ariaLabel="menu"
 			>
 				<Menu />
 			</IconButton>
