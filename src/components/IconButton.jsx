@@ -81,7 +81,7 @@ const IconButton = ({
 				className={className}
 				type={type}
 				onClick={onClick}
-				ariaLabel={ariaLabel}
+				aria-label={ariaLabel}
 			>
 				{children}{" "}
 			</button>
