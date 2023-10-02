@@ -21,6 +21,7 @@ const ProjectCard = ({ project }) => {
 				>
 					<img
 						src={project.imageUrl.toString()}
+						alt={project.alt}
 						css={{
 							width: "100%",
 							height: "auto",

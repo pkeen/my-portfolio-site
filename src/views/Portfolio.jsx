@@ -13,6 +13,7 @@ const projects = [
 		imageUrl: "./zenora-preview-2.png",
 		appLink: "https://zenora.vercel.app/",
 		githubLink: "https://github.com/pkeen/zenora-frontend",
+		alt: "Zenora Courses - A PERN Stack app.",
 	},
 	{
 		id: 2,
@@ -22,6 +23,7 @@ const projects = [
 		imageUrl: "./repertoire-preview.png",
 		appLink: "https://repertoire-23c95f862c5c.herokuapp.com/",
 		githubLink: "https://github.com/pkeen/repertoire",
+		alt: "Repertoire - A MERN Stack app for tracking workouts.",
 	},
 	{
 		id: 3,
@@ -31,6 +33,7 @@ const projects = [
 		imageUrl: "./bubble-words.png",
 		appLink: "https://pkeen.github.io/BubbleWords/",
 		githubLink: "https://github.com/pkeen/BubbleWords",
+		alt: "Bubble Words - A fun, fast typing browser game",
 	},
 	{
 		id: 4,
@@ -40,6 +43,7 @@ const projects = [
 		imageUrl: "casharoo-preview.png",
 		appLink: "https://casharoo-f9e69a0a5271.herokuapp.com/",
 		githubLink: "https://github.com/pkeen/casharoo",
+		alt: "Casharoo - A Django app for personal finance and budget tracking.",
 	},
 ];
 
