@@ -95,7 +95,7 @@ const Contact = () => {
 							}}
 						>
 							<a href="https://www.linkedin.com/in/stephen-keen">
-								<IconButton>
+								<IconButton ariaLabel="Link to LinkedIn Profile">
 									<LinkedIn
 										css={{
 											background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
@@ -109,7 +109,7 @@ const Contact = () => {
 								</IconButton>
 							</a>
 							<a href="https://github.com/pkeen">
-								<IconButton>
+								<IconButton ariaLabel="Link to GitHub Profile">
 									<GitHub
 										css={{
 											background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
@@ -123,7 +123,7 @@ const Contact = () => {
 								</IconButton>
 							</a>
 							<a href="https://www.instagram.com/pete_keen/">
-								<IconButton>
+								<IconButton ariaLabel="Link to Instagram Profile">
 									<Instagram
 										css={{
 											background: `linear-gradient(90deg, ${theme.gradients.h2[0]}, ${theme.gradients.h2[1]})`,
