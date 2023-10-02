@@ -6,6 +6,7 @@ const IconButton = ({
 	children,
 	onClick,
 	className,
+	ariaLabel,
 	type = "button",
 	variant = "primary",
 	size = "md",
@@ -80,6 +81,7 @@ const IconButton = ({
 				className={className}
 				type={type}
 				onClick={onClick}
+				ariaLabel={ariaLabel}
 			>
 				{children}{" "}
 			</button>
