@@ -19,17 +19,7 @@ const NavBar = () => {
 
 	return (
 		<header>
-			<nav
-			// css={{
-			// 	display: "flex",
-			// 	justifyContent: "space-between",
-			// 	alignItems: "center",
-			// 	height: "70px",
-			// 	position: "sticky",
-			// 	top: 0,
-			// 	zIndex: 1000, // Ensure the navbar stays above other content
-			// }}
-			>
+			<nav>
 				<div
 					css={{
 						display: "flex",
@@ -85,7 +75,6 @@ const NavBar = () => {
 							display: "flex",
 							flexDirection: "column",
 							textAlign: "right",
-							// justifyContent: "space-between",
 							alignItems: "center",
 							padding: "1rem 0",
 							"& > a": {
