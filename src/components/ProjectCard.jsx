@@ -8,6 +8,8 @@ import { GitHub } from "@mui/icons-material";
 const ProjectCard = ({ project }) => {
 	const theme = useTheme();
 
+	console.log(project.imageSrcSet && project.imageSrcSet[1].toString())
+
 	return (
 		<a href={project.appLink}>
 			<CardContainer>
@@ -20,6 +22,8 @@ const ProjectCard = ({ project }) => {
 					}}
 				>
 					<img
+						srcSet={project.imageSrcSet && `${project.imageUrl.toString()} 3450w, ${project.imageSrcSet[1].toString()} 449w, ${project.imageSrcSet[0].toString()} 345w`}
+						sizes={project.imageSrcSet && `(min-width: 700px) calc(.5 *(100vw - 3rem)), calc(100vw - 3rem)`}
 						src={project.imageUrl.toString()}
 						alt={project.alt}
 						css={{

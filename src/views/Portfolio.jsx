@@ -11,6 +11,7 @@ const projects = [
 		description:
 			"A PERN stack app designed for course creators, to rapidly create and curate courses.",
 		imageUrl: "./zenora-preview-2.png",
+		imageSrcSet: ["./zenora-small.png", "./zenora-medium.jpeg"],
 		appLink: "https://zenora.vercel.app/",
 		githubLink: "https://github.com/pkeen/zenora-frontend",
 		alt: "Zenora Courses - A PERN Stack app.",
