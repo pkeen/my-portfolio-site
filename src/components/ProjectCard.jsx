@@ -67,6 +67,7 @@ const ProjectCard = ({ project }) => {
 								justifyContent: "center",
 								alignItems: "center",
 							}}
+							aria-label={`link to github repo for ${project.title}`}
 						>
 							<GitHub />
 						</a>
