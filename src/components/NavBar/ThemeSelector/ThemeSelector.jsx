@@ -22,7 +22,7 @@ const ThemeSelector = ({ className }) => {
 		<div>
 			<IconButton
 				onClick={toggleTheme}
-				
+				ariaLabel="Toggle between light and dark visual themes"
 				variant="gradient"
 				size={"sm"}
 				className={className}
