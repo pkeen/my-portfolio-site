@@ -22,6 +22,7 @@ const projects = [
 		description:
 			"A MERN Stack app users can use to track workouts, with helpful exercise gifs.",
 		imageUrl: "./repertoire-preview.png",
+		imageSrcSet: ["./repertoire-small.png", "./repertoire-medium.png"],
 		appLink: "https://repertoire-23c95f862c5c.herokuapp.com/",
 		githubLink: "https://github.com/pkeen/repertoire",
 		alt: "Repertoire - A MERN Stack app for tracking workouts.",
@@ -32,6 +33,7 @@ const projects = [
 		description:
 			"A typing game built in vanilla javascript, users must type words to pop bubbles and earn points",
 		imageUrl: "./bubble-words.png",
+		imageSrcSet: ["./bubblewords-small.png", "./bubblewords-medium.png"],
 		appLink: "https://pkeen.github.io/BubbleWords/",
 		githubLink: "https://github.com/pkeen/BubbleWords",
 		alt: "Bubble Words - A fun, fast typing browser game",
@@ -42,6 +44,7 @@ const projects = [
 		description:
 			"A Django app that allows users to track expenses and see a breakdown by categry",
 		imageUrl: "casharoo-preview.png",
+		imageSrcSet: ["./casharoo-small.png", "./casharoo-medium.png"],
 		appLink: "https://casharoo-f9e69a0a5271.herokuapp.com/",
 		githubLink: "https://github.com/pkeen/casharoo",
 		alt: "Casharoo - A Django app for personal finance and budget tracking.",
