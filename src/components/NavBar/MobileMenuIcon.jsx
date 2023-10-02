@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Menu } from "@mui/icons-material";
+import { Menu, Close } from "@mui/icons-material";
 import IconButton from "../IconButton";
 import { useTheme } from "@emotion/react";
 import NavigationMenu from "./NavigationMenu";
 
-const Hamburger = () => {
+const MobileMenuIcon = ({mobileMenuOpen , setMobileMenuOpen}) => {
 	const theme = useTheme();
 	const [open, setOpen] = useState(false);
 
@@ -25,17 +25,8 @@ const Hamburger = () => {
 		},
 	};
 
-	const menuCss = {
-		display: open ? "flex" : "none",
-		position: "absolute",
-		border: "1px solid red",
-		top: "60px",
-		right: ".5rem",
-		flexDirection: "column",
-	};
-
 	const handleClick = () => {
-		setOpen((prev) => !prev);
+		setMobileMenuOpen((prev) => !prev);
 		console.log(open)
 	}
 
@@ -44,7 +35,6 @@ const Hamburger = () => {
 	// css = {menuCss}
 
 	return (
-		<div css={hamburgerCss}>
 			<IconButton
 				variant="ghost"
 				size="sm"
@@ -53,26 +43,9 @@ const Hamburger = () => {
 				role="button"
 				ariaLabel="menu"
 			>
-				<Menu />
+				{mobileMenuOpen ? <Close /> : <Menu />}
 			</IconButton>
-			<div css={menuCss} key={open ? "open" : "closed"}>
-				<NavigationMenu
-					css={{
-						display: "flex",
-						flexDirection: "column",
-						textAlign: "right",
-						// justifyContent: "space-between",
-						alignItems: "right",
-						padding: "1rem 0",
-						'& > a': {
-							paddingBottom: '.5rem'
-						}
-					}}
-				/>
-				<p>Light mode</p>
-			</div>
-		</div>
 	);
 };
 
-export default Hamburger;
+export default MobileMenuIcon;
