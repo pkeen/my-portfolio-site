@@ -7,6 +7,7 @@ import { Instagram } from "@mui/icons-material";
 import Discord from "../components/Discord";
 import IconButton from "../components/IconButton";
 import Email from "../components/Email";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
 	const theme = useTheme();
@@ -74,16 +75,13 @@ const Contact = () => {
 						>
 							I'd love to hear from you
 						</h2>
+
 						<blockquote
 							css={{ textAlign: "left", marginTop: "1rem" }}
 						>
 							Whether you want to hire me, collaborate, or just
-							talk tech
+							talk tech...
 						</blockquote>
-
-						<Email css={{ marginTop: "1rem" }}>
-							pkeen7@gmail.com
-						</Email>
 
 						<div
 							css={{
@@ -137,6 +135,15 @@ const Contact = () => {
 								</IconButton>
 							</a>
 						</div>
+
+						{/* <Email css={{ marginTop: "1rem" }}>
+							pkeen7@gmail.com
+						</Email> */}
+						<ContactForm
+							css={{
+								marginTop: "1rem",
+							}}
+						/>
 					</div>
 				</div>
 				<div

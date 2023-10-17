@@ -29,7 +29,17 @@ let darkTheme = merge({}, defaultTheme, {
 			},
 		},
 		blockquote: {
-			color: defaultTheme.colors.grey[500],
+			color: defaultTheme.colors.grey[400],
+		},
+		input: {
+			// backgroundColor: defaultTheme.colors.grey[900],
+			color: defaultTheme.colors.grey[400],
+		},
+		label: {
+			color: defaultTheme.colors.grey[400],
+		},
+		textArea: {
+			color: defaultTheme.colors.grey[400],
 		},
 	},
 	components: {
@@ -47,11 +57,20 @@ let darkTheme = merge({}, defaultTheme, {
 		},
 	},
 	gradients: {
-		h1: [defaultTheme.colors.grey[50], defaultTheme.colors.pink[200]], 
-		h2: [defaultTheme.colors.appleBlossom[500], defaultTheme.colors.orientalPink[300]],
-		h3: [defaultTheme.colors.orientalPink[600], defaultTheme.colors.appleBlossom[500]],
+		h1: [defaultTheme.colors.grey[50], defaultTheme.colors.pink[200]],
+		h2: [
+			defaultTheme.colors.appleBlossom[500],
+			defaultTheme.colors.orientalPink[300],
+		],
+		h3: [
+			defaultTheme.colors.orientalPink[600],
+			defaultTheme.colors.appleBlossom[500],
+		],
 		// darkVibrant: `linear-gradient(90deg, ${theme.colors.appleBlossom[500]}, ${theme.colors.orientalPink[300]})`,
-		border: [defaultTheme.colors.appleBlossom[500], defaultTheme.colors.orientalPink[400]]
+		border: [
+			defaultTheme.colors.appleBlossom[500],
+			defaultTheme.colors.orientalPink[400],
+		],
 	},
 	globals: {
 		body: {

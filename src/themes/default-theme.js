@@ -4,7 +4,9 @@ const mq = breakpoints.map((bp, idx) => {
 	return {
 		higher: `@media (min-width: ${bp}px)`,
 		lower: `@media (max-width: ${bp}px)`,
-		only: `@media (min-width: ${bp}px) and (max-width: ${breakpoints[idx + 1]}px)`,
+		only: `@media (min-width: ${bp}px) and (max-width: ${
+			breakpoints[idx + 1]
+		}px)`,
 	};
 });
 
@@ -149,6 +151,23 @@ const theme = {
 		lg: mq[2],
 		xl: mq[3],
 		xxl: mq[4],
+	},
+};
+
+theme.typography = {
+	...theme.typography,
+	input: {
+		backgroundColor: "transparent",
+		transition: "background 0.5 ease",
+		color: theme.colors.grey[500],
+	},
+	label: {
+		color: theme.colors.grey[500],
+	},
+	textArea: {
+		backgroundColor: "transparent",
+		transition: "background 0.5 ease",
+		color: theme.colors.grey[500],
 	},
 };
 

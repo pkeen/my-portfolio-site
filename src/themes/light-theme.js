@@ -31,6 +31,15 @@ const lightTheme = merge({}, defaultTheme, {
 				color: defaultTheme.colors.grey[600],
 			},
 		},
+		input: {
+			color: defaultTheme.colors.grey[700],
+		},
+		label: {
+			color: defaultTheme.colors.grey[700],
+		},
+		textArea: {
+			color: defaultTheme.colors.grey[700],
+		},
 	},
 	components: {
 		button: {
