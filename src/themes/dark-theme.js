@@ -71,6 +71,19 @@ let darkTheme = merge({}, defaultTheme, {
 			defaultTheme.colors.appleBlossom[500],
 			defaultTheme.colors.orientalPink[400],
 		],
+		button: {
+			background: `linear-gradient(to right, ${defaultTheme.colors.appleBlossom[600]}, ${defaultTheme.colors.orientalPink[500]})`,
+			"&:hover": {
+				background: `linear-gradient(to right, ${defaultTheme.colors.appleBlossom[500]}, ${defaultTheme.colors.orientalPink[400]})`,
+			},
+			"&:active": {
+				background: `linear-gradient(to right, ${defaultTheme.colors.appleBlossom[400]}, ${defaultTheme.colors.orientalPink[300]})`,
+			},
+			"&:focus": {
+				background: `linear-gradient(to right, ${defaultTheme.colors.appleBlossom[700]}, ${defaultTheme.colors.orientalPink[600]})`,
+				outline: `2px solid ${defaultTheme.colors.grey[100]}`
+			}
+		},
 	},
 	globals: {
 		body: {

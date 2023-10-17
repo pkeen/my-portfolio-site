@@ -15,7 +15,7 @@ const Button = ({
 	let spanCss = {};
 	let css = {
 		padding: "1rem",
-		borderRadius: "3rem",
+		borderRadius: ".5rem",
 		border: "none",
 		outline: "none",
 		WebkitAppearance: "none",
@@ -55,6 +55,12 @@ const Button = ({
 				borderLeft: `1px solid ${theme.colors.grey[400]}`,
 			};
 			break;
+			case "gradient": {
+				variantCss = {
+					...theme.gradients.button
+				}
+			break;
+		}
 		case "rhomboid":
 			variantCss = {
 				backgroundColor: "transparent",

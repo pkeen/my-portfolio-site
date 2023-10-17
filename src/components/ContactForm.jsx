@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputField from "./InputField";
 import TextAreaField from "./TextAreaField";
 import RhomboidGradientButton from "../components/RhomboidGradientButton";
+import Button from "./Button";
 
 
 const ContactForm = ({ className }) => {
@@ -40,7 +41,7 @@ const ContactForm = ({ className }) => {
 				onChange={handleChange}
 				label="Message"
 			/>
-			
+			<Button variant="gradient" css={{marginTop: '.5rem'}}>Send Message</Button>
 		</form>
 	);
 };
