@@ -150,10 +150,6 @@ const Contact = () => {
 					css={{
 						width: "10px",
 						height: "100%",
-						// backgroundColor: "#F76D60",
-						background: "rgb(247,109,96)",
-						// background:
-						// 	"linear-gradient(0deg, rgba(236,118,107,1) 0%, rgba(255,192,203,1) 100%)",
 						background: `linear-gradient(0deg, ${theme.gradients.border[0]} 0%, ${theme.gradients.border[1]})`,
 					}}
 				></div>

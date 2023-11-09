@@ -73,8 +73,6 @@ const Portfolio = () => {
 					width: "100%",
 					height: "10px",
 					flexShrink: 0, // This will prevent the div from growing or shrinking
-					background: theme.colors.bittersweet[400],
-
 					background: `linear-gradient(270deg, ${theme.gradients.border[0]} 0%, ${theme.gradients.border[1]})`,
 				}}
 			></div>

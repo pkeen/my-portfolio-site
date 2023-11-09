@@ -1,9 +1,16 @@
 import React from "react";
 import { useTheme } from "@emotion/react";
 
-const InputField = ({ type, name, id, value, onChange, label }) => {
-
-	const theme = useTheme()
+const InputField = ({
+	type,
+	name,
+	id,
+	value,
+	onChange,
+	label,
+	required = false,
+}) => {
+	const theme = useTheme();
 
 	return (
 		<div
