@@ -126,9 +126,6 @@ const GlobalStyles2 = ({theme}) => {
         }
 	`;
 
-   
-
-    console.log(theme.globals)
 
     return (
         <Global styles={[reset, theme.globals]}>

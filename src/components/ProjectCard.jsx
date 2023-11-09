@@ -8,7 +8,7 @@ import { GitHub } from "@mui/icons-material";
 const ProjectCard = ({ project }) => {
 	const theme = useTheme();
 
-	console.log(project.imageSrcSet && project.imageSrcSet[1].toString())
+	// console.log(project.imageSrcSet && project.imageSrcSet[1].toString())
 
 	return (
 		<a href={project.appLink}>

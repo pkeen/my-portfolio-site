@@ -13,8 +13,6 @@ const IconButton = ({
 }) => {
 	const theme = useTheme();
 
-	console.log(theme);
-
 	let css = {
         display: 'flex',
 		padding: "0rem",
